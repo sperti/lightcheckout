@@ -1,0 +1,23 @@
+/*
+  Lightcheckout css
+  License: MIT Licence
+  Claudio Sperti
+*/
+.lc-input,
+.fcWrapper {
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	-webkit-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	max-height: 250px;
+}
+.lc-input.lc-hide {
+	max-height: 0;
+}
+.lc-input span.noNumError {
+	display: block;
+	color: #d41515;
+	padding: 5px 0;
+}
