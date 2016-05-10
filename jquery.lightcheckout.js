@@ -120,7 +120,7 @@
 				
 			plugin.clonedInput.find('input')
 							.attr('id', oldId + "_lcInput")
-							.attr('autocomplete', "off")
+							.attr('autocomplete', "false")
 							.removeAttr('required')
 							.removeAttr('name');
 
