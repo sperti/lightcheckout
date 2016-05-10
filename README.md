@@ -93,7 +93,7 @@ $(document).ready(function(){
 		province: '#province',
 		zip: '#zipcode'
 	};
-	$('.addressForm').lightChekout(options);
+	$('.addressForm').lightCheckout(options);
 });
 ```
 
