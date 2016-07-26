@@ -120,7 +120,7 @@
 				
 			plugin.clonedInput.find('input')
 							.attr('id', oldId + "_lcInput")
-							.attr('autocomplete', "false")
+							.attr('autocomplete', "off")
 							.removeAttr('required')
 							.removeAttr('name');
 
@@ -142,7 +142,7 @@
             plugin.settings.wrappers.city.removeClass('lc-hide');
             plugin.settings.wrappers.zip.removeClass('lc-hide');
             plugin.settings.wrappers.province.removeClass('lc-hide');
-            plugin.clonedInput.addClass('lc-hide');
+            plugin.clonedInput.find('input').addClass('lc-input lc-hide');
         }
 		
 		var setup = function() {
@@ -211,6 +211,9 @@
 				plugin.settings.setField(plugin.settings.inputs.province, province);
 				
 				/* show filled inputs */
+				showInputs();
+			} else {
+				/* fallback no address found */
 				showInputs();
 			}
         }
